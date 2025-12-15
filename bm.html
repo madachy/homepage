@@ -248,6 +248,19 @@
       <br>
       <a href="http://github.com/"><img src="github.png" width="20" alt=""></a> <a href="https://amazon.com/clouddrive"><img src="amazondrive.png" width="70" alt=""></a>
     <p>
+            <strong>reference<br></strong> <a href="http://www.m-w.com/" title="xx">github view</a> <br>
+      <input type="text" size="12" name="viewit" id="viewit" placeholder="dictionary lookup" onblur="MWdictionary_lookup2();"><br>
+      <script>
+        var input2 = document.getElementById("viewit");
+        input2.addEventListener("keyup", function(event) {
+          if (event.keyCode === 13) {
+              var message = document.getElementById("lookitup").value;
+              window.location.href = "https://htmlpreview.github.io/?"+viewit;
+           /*event.preventDefault();
+           alert('Hello nothin')*/
+          }
+        });
+      </script>
     <div>
       <table>
         <tbody>
