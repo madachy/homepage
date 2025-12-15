@@ -240,6 +240,19 @@
     <a href="https://www.overleaf.com/dash"><img src="overleaf_wide_colour_light_bg.png" alt="" width="60" class="no_border"></a>
      <a href="http://github.com"><img src="github.png" alt="" width="20" class="no_border"></a>  <a href="http://ezsim.net/diff.py"><span style="background-color: yellow;">diff</span></a> <br>
 
+     <a href="https://htmlpreview.github.io/" title="xx">github view</a> <br>
+ <input type="text" size="12" name="viewit" id="viewit" placeholder="render html" onblur="MWdictionary_lookup2();"><br>
+ <script>
+   var input2 = document.getElementById("viewit");
+   input2.addEventListener("keyup", function(event) {
+     if (event.keyCode === 13) {
+         var message = document.getElementById("viewit").value;
+         window.location.href = "https://htmlpreview.github.io/?"+message;
+      /*event.preventDefault();
+      alert('Hello nothin')*/
+     }
+   });
+ </script>
     <p>
       <font size="4">☁</font> <b>clouds</b><br>
       <a href="https://drive.google.com/"><img src="google_drive.jpeg" alt="" width="20"></a>&nbsp;&nbsp;<a href="http://docs.google.com">docs</a> &nbsp;&nbsp;<a href="http://slides.google.com">slides</a>
@@ -248,19 +261,7 @@
       <br>
       <a href="http://github.com/"><img src="github.png" width="20" alt=""></a> <a href="https://amazon.com/clouddrive"><img src="amazondrive.png" width="70" alt=""></a>
     <p>
-            <strong>reference<br></strong> <a href="http://www.m-w.com/" title="xx">github view</a> <br>
-      <input type="text" size="12" name="viewit" id="viewit" placeholder="dictionary lookup" onblur="MWdictionary_lookup2();"><br>
-      <script>
-        var input2 = document.getElementById("viewit");
-        input2.addEventListener("keyup", function(event) {
-          if (event.keyCode === 13) {
-              var message = document.getElementById("viewit").value;
-              window.location.href = "https://htmlpreview.github.io/?"+message;
-           /*event.preventDefault();
-           alert('Hello nothin')*/
-          }
-        });
-      </script>
+
     <div>
       <table>
         <tbody>
@@ -402,7 +403,7 @@
   </div>
 
   <div class="container">
-Last update 11.25.25
+Last update 12.14.25
   </div>
 
 </body>
